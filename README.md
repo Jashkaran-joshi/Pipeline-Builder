@@ -1,4 +1,4 @@
-# Pipeline Builder - Full Stack Technical Assessment Implementation
+# Pipeline Builder
 
 A professional, feature-rich pipeline building application with a React-based frontend and a FastAPI backend. This project allows users to create complex workflows using a variety of nodes, verify connections, and ensure the pipeline structure is valid.
 
