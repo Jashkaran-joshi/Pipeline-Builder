@@ -1,0 +1,19 @@
+.toolbar {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(51, 65, 85, 0.9) 100%);
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+}
+
+.title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.nodeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}

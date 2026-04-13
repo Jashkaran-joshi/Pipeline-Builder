@@ -1,0 +1,39 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--background);
+}
+
+.header {
+    background: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+}
+
+.title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-light), var(--secondary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+.canvasWrapper {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer {
+    background: var(--surface);
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,116 @@
+/* Premium edge and handle styling for ReactFlow */
+
+/* Edge hover effects */
+.react-flow__edge-path {
+    transition: stroke-width 0.2s ease, filter 0.2s ease;
+}
+
+.react-flow__edge:hover .react-flow__edge-path {
+    stroke-width: 3px !important;
+    filter: drop-shadow(0 0 8px rgba(129, 140, 248, 0.6)) !important;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+    stroke: #a78bfa !important;
+    stroke-width: 3px !important;
+    filter: drop-shadow(0 0 10px rgba(167, 139, 250, 0.8)) !important;
+}
+
+/* Handle styling */
+.react-flow__handle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #334155;
+    background: #6366f1;
+    transition: all 0.2s ease;
+}
+
+.react-flow__handle:hover {
+    width: 14px;
+    height: 14px;
+    border-color: #818cf8;
+    background: #818cf8;
+    box-shadow: 0 0 12px rgba(129, 140, 248, 0.6);
+    transform: scale(1.1);
+}
+
+.react-flow__handle-connecting {
+    background: #10b981 !important;
+    border-color: #10b981 !important;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.8) !important;
+}
+
+.react-flow__handle-valid {
+    background: #10b981 !important;
+    border-color: #10b981 !important;
+}
+
+/* Connection line styling when dragging */
+.react-flow__connection-path {
+    stroke: #818cf8;
+    stroke-width: 2px;
+    filter: drop-shadow(0 0 6px rgba(129, 140, 248, 0.5));
+}
+
+/* Enhanced node selection */
+.react-flow__node.selected {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3) !important;
+}
+
+/* Smooth edge animations */
+@keyframes dash {
+    to {
+        stroke-dashoffset: -1000;
+    }
+}
+
+.react-flow__edge.animated path {
+    stroke-dasharray: 5;
+    animation: dash 20s linear infinite;
+}
+
+/* Controls styling */
+.react-flow__controls {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.react-flow__controls-button {
+    background: #1e293b;
+    border-bottom: 1px solid #334155;
+    color: #f1f5f9;
+    transition: all 0.2s ease;
+}
+
+.react-flow__controls-button:hover {
+    background: #334155;
+}
+
+.react-flow__controls-button svg {
+    fill: #f1f5f9;
+}
+
+/* MiniMap styling */
+.react-flow__minimap {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Edge label styling */
+.react-flow__edge-text {
+    fill: #f1f5f9;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.react-flow__edge-textbg {
+    fill: #1e293b;
+    fill-opacity: 0.9;
+}
+
+/* Smooth zoom transitions */
+.react-flow__renderer {
+    transition: transform 0.3s ease;
+}
